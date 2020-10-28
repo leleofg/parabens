@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script type="text/javascript">
+    function clicaAqui(){
+      const div = document.getElementById("gif");
+      const botao = document.getElementById("botao");
+      if (div.style.display === "none") {
+        div.style.display = "block";
+        botao.value = "Fecha aqui";
+      } else {
+        div.style.display = "none";
+        botao.value = "Abre aqui";
+      }
+    }
+    </script>
+  </head>
+  <style>
+    .blink_me {
+      animation: blinker 1s linear infinite;
+    }
+
+    @keyframes blinker {  
+      50% { opacity: 0; }
+    }
+  </style>
+  <body>
+    <div style="text-align: center;">
+      <input class="btn btn-secundary" style="margin-bottom: 20px; margin-top: 10px;" id="botao" type="button" value="Abre aqui" onclick="clicaAqui()">
+      <div id="gif" style="display: none">
+        <img src="xd.gif">
+        <p class="blink_me" style="font-size: 18px; margin-top: 15px; font-weight: bold;">Feliz 1 mês de namoro! S2</p>
+      </div>
+    </div>
+  </body>
+</html>
